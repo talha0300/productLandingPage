@@ -26,9 +26,7 @@ body {
   margin-top: 30px;
 }
 
-/*#container{
-  position: relative;
-}*/
+
 
 header{
   display: flex;
@@ -41,13 +39,7 @@ header{
   background-color: #eee;
 }
 
-@media (max-width:600px) {
 
-  header{
-    flex-wrap: wrap;
-  }
-
-}
 
 #page-logo{
   display: flex;
@@ -66,7 +58,7 @@ header{
   padding-left: 15px
 }
 
-
+/*
 @media (max-width:600px){
   #page-logo{
     margin-top: 10px;
@@ -78,13 +70,8 @@ header{
     margin-left: auto;
     margin-right: auto;
   }
-}
-/*@media (max-width: 600px) {
-  #page-logo {
-    justify-content: center;
-    align-items: center;
-  }
 }*/
+
 
 
 
@@ -96,38 +83,8 @@ header{
 
 }
 
-@media (max-width:800px){
-  #navigational-bar{
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 50px;
 
-  }
-#navigational-bar li {
-    padding-bottom: 5px;
-  }
-}
-/*
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-  }
-}*/
-
-/*@media (max-width: 600px) {
-    #page-logo > img {
-      align-items: center;
-      justify-content: center;
-
-    }
-}*/
 
 #emailform {
   display: flex;
@@ -163,12 +120,12 @@ header{
   background-color: orange;
   transition: background-color 1s;
 }
-
+/*
 @media (max-width: 650px) {
   #emailform {
     margin-top: 120px;
   }
-}
+}*/
 
 .features-section
 {
@@ -199,7 +156,7 @@ header{
   width: 80vw;
   padding: 5px;
 }
-
+/*
 @media (max-width:600px) {
   .icons{
     display: none;
@@ -210,7 +167,7 @@ header{
     padding: 0;
     height: 150px;
   }
-}
+}*/
 
 #video1{
   display: none;
@@ -282,7 +239,7 @@ header{
   background-color: #f1c40f;
   font-weight: 400;
 }
-
+/*
 @media (max-width:600px) {
   .pricing-section{
     flex-direction: column;
@@ -296,7 +253,7 @@ header{
     margin-bottom: 7px;
 
   }
-}
+}*/
 
 footer{
   max-width: 1000px;
@@ -324,4 +281,65 @@ footer > div > ul{
   color: #444;
   margin-top: 5px;
   margin-bottom: 15px;
+}
+
+@media (max-width:600px) {
+
+  header{
+    flex-wrap: wrap;
+  }
+  #page-logo{
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+  }
+  #page-logo > img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #emailform {
+    margin-top: 120px;
+  }
+
+  .icons{
+    display: none;
+  }
+  .description{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+
+  .pricing-section{
+    flex-direction: column;
+  }
+  .pricing-section > div{
+    max-width: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+  }
+
+}
+
+@media (max-width:800px){
+  #navigational-bar{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+
+  }
+  #navigational-bar li {
+    padding-bottom: 5px;
+  }
 }
